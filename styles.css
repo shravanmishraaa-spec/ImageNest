@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #222222;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #172a3a;
+    color: white;
+    padding: 40px 8%;
+}
+
+.brand h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.brand p {
+    color: #d6e4e8;
+    margin-bottom: 30px;
+}
+
+
+/* Search */
+
+.search-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    max-width: 700px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #e07a5f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Main */
+
+main {
+    width: 84%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* Quick Picks */
+
+.quick-picks {
+    margin-bottom: 40px;
+}
+
+.quick-picks h2 {
+    margin-bottom: 15px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chips button {
+    padding: 10px 18px;
+    border: 2px solid #172a3a;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #172a3a;
+    cursor: pointer;
+}
+
+
+/* Results */
+
+#status {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 30px 6%;
+    }
+
+    .brand h1 {
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-input,
+    #search-button {
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    main {
+        width: 88%;
+    }
+}

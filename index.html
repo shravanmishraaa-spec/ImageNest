@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPulse - Image Search</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="brand">
+            <h1>PixelPulse</h1>
+            <p>Find images that match your imagination.</p>
+        </div>
+
+        <form id="search-form" class="search-form">
+            <label for="search-input">Search for images</label>
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search images..."
+                    aria-label="Search for images"
+                >
+
+                <button type="submit" id="search-button">
+                    Search
+                </button>
+            </div>
+        </form>
+    </header>
+
+
+    <main>
+
+        <section class="quick-picks">
+            <h2>Explore</h2>
+
+            <div class="chips">
+                <button type="button">Nature</button>
+                <button type="button">Space</button>
+                <button type="button">Animals</button>
+                <button type="button">Technology</button>
+            </div>
+        </section>
+
+
+        <section class="results-section">
+
+            <p id="status">
+                Search for something to see results here.
+            </p>
+
+            <div id="results">
+                <!-- Images will be added here in Part 2 -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
